@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <button (click)= "myFirstMethod()">Click me</button>
+  <input [(ngModel)]="title">
+</div> 
+
+<div *ngFor = "let restaurant of restaurants">
+  
+  <!-- {{restaurant.restaurant.cuisines}} -->
+  <div class="card" style="width: 18rem;">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">{{restaurant.restaurant.name}}</h5>
+      <p class="card-text">{{restaurant.restaurant.name}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

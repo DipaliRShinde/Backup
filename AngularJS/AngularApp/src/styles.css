@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    color: brown;
+}
